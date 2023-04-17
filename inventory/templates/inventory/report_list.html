@@ -1,0 +1,22 @@
+
+<h1>Report List</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product ID</th>
+      <th>Quantity Added</th>
+      <th>Stock Left</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for report in reports %}
+    <tr>
+      <td>{{ report.product.id }}</td>
+      <td>{{ report.quantity_add }}</td>
+      <td>{{ report.stockleft }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
