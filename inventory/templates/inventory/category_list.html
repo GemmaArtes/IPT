@@ -1,0 +1,17 @@
+
+<h1>Category List</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for category in categories %}
+    <tr>
+      <td>{{ category.type}}</td>
+    {% endfor %}
+  </tbody>
+</table>
+
